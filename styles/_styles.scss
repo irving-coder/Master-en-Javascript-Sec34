@@ -1,0 +1,354 @@
+$letra-principal: Verdana, Geneva, sans-serif; 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: $letra-principal;
+}
+
+$tema-principal: #275c3e !default;
+$blue-theme: #1f87c4;
+$red-theme: #ca3413;
+$fondo-menu: #333333;
+$bg-image: url('../img/hojas.jpg') !default;
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.letra-post{
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+// FALTA AGREGAR EFECTOS A LOS ELEMENTOS DEL NAV
+
+body{
+    background-image: $bg-image;
+    background-attachment: fixed; // determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor
+}
+
+#container{
+    width: 80%;
+    max-width: 1250px;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    background-color: white;
+}
+
+.wrap{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#header{
+    padding-top: 25px;
+    margin-bottom: 30px;
+
+    div{
+        width: 350px;
+        height: 70px;
+        background-color: $tema-principal;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 38px;
+        font-weight: bolder;
+        font-family: sans-serif;
+        line-height: 70px;
+    }
+
+    #nav{
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        // margin-bottom: 20px;
+        background-color: $fondo-menu;
+
+        #menu{
+            width: 100%;
+
+            .linked a:first-child{
+                // margin-left: 14.5%;
+                padding: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }                
+
+            .linked{
+                float: inline-start;
+                list-style: none;
+                line-height: 50px;
+                margin-right: 4%;
+
+                a{
+                    padding: 30px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-transform: uppercase;
+                    transition: 300ms all;
+                }
+
+                a:hover{
+                    color: $tema-principal;
+                }
+            }
+
+        }
+    }
+}
+
+.slider{
+    height: 280px;
+    margin-bottom: 30px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 300px !important;
+}
+
+#main{
+    h2{
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    #section{
+        float: left;
+        width: 65%;
+        padding: 7px;
+
+        .article{
+            h2{
+                font-size: 32px;
+                color: $fondo-menu;
+                margin-bottom: 5px;
+            }
+
+            .date{
+                display: block;
+                font-size: 15px;    
+                color: #646464;
+                margin-bottom: 15px;
+            }
+
+            .letra-post{
+                text-align: justify;
+            }
+
+            .read-more{
+                display: block;
+                width: 100px;
+                height: 35px;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                line-height: 35px;
+                text-decoration: none;
+                text-align: center;
+                background-color: $tema-principal;
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+
+    #box-watch{
+        width: 250px;
+        height: 150px;
+        float: left;
+        margin-left: 20px;
+
+        #watch{
+            display: block;
+            width: 350px;
+            height: 60px;
+            border: 5px dashed black;
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+
+    #box{
+        margin-left: 10px;
+
+        #accordion{
+            width: 65%;
+            float: left;
+        }
+    }
+
+    // Corregir
+    #contact form{
+        width: 50%;
+        float: left;
+        margin: 20px;
+        padding: 20px;
+        padding-top: 10px;
+        border: 1px gray solid;
+        // border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1; PARA HACER DEGRADADO
+        border-radius: 4px;
+        box-shadow: 0 0 3px rgb(182, 182, 182);
+
+        label,
+        input{
+            width: 60%;
+            float: left;
+            height: 25px;           
+        }
+
+        label{
+            margin-top: 10px;
+        }
+
+        select{
+            width: 42%;
+            height: 25px;
+            // margin-top: 5px;
+        }
+
+        input[type='submit']{
+            height: 50px;
+            margin-top: 15px;
+        }
+    }
+
+    #aside{
+        float: right;
+        width: 25%;
+        margin-right: 10px;
+        background: url(../img/lines.png) repeat-x;
+        line-height: 8px;
+
+        h3{
+            margin-bottom: 15px;
+            color: $fondo-menu;
+            text-align: center;
+            
+            span{
+                padding-left: 5px;
+                padding-right: 5px;
+                background: white;
+            }
+        }
+
+        img{
+            width: 280px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            width: 280px;
+            text-align: justify;
+        }
+
+        #login{
+            width: 280px;
+            margin-top: 50px;
+            text-align: left;
+
+            h3{
+                text-align: center;
+                background: url(../img/lines.png) repeat-x;
+                line-height: 8px;
+                margin-bottom: 15px;
+
+                span{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    background: white;
+                }
+            }
+
+            #form{
+                margin-top: 5px;
+                margin-bottom: 50px;
+
+                input[type='text'],
+                input[type='email'],
+                input[type='password']{
+                    width: 100%;
+                    height: 23px;
+                    margin-top: 7px;
+                    margin-bottom: 10px;
+                }
+
+                #send{
+                    width: 90px;
+                    height: 35px;
+                    color: white;
+                    font-size: 14px;
+                    border: none;
+                    background-color: $tema-principal;
+                }
+
+                #send:hover{
+                    border: 3px solid gray;
+                    transition: 200ms;
+                }
+            }
+        }
+    }
+}
+
+#footer{
+    width: 80%;
+    max-width: 1250px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: $fondo-menu;
+    line-height: 50px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+
+    a{
+        margin-left: 60%;
+        color: white;
+        text-decoration: none;
+        text-align: right !important;
+    }
+}
+
+#bottons{
+    display: block;
+    position: fixed;
+    top: 40%;
+    width: 50px;
+    height: 130px;
+
+    background-color: rgb(64, 64, 64, 0.7);
+}
+
+#green-theme, 
+#red-theme, 
+#blue-theme{
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+}
+
+#green-theme{
+    background-color: #275c3e;
+}
+
+#blue-theme{
+    background-color: $blue-theme;
+}
+
+#red-theme{
+    background-color: $red-theme;
+}

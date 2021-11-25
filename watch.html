@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Proyecto con jQuery UI</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles/green.css" id="theme" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src=".././jQuery/jquery-3.5.1.min.js"></script>
+
+    <!-- momentjs -->
+    <script type="text/javascript" src="javascript/momentjs/moment.min.js"></script>
+    <script type="text/javascript" src="javascript/momentjs/moment-with-locales.min.js"></script>
+
+    <!-- main.js -->
+    <script type="text/javascript" src="javascript/main.js"></script>
+</head>
+<body>
+    <div id="bottons">
+        <div id="green-theme"></div>
+        <div id="red-theme"></div>
+        <div id="blue-theme"></div>
+    </div>
+
+    <div id="container">
+        <header id="header" class="wrap">
+            <div>
+                Practicando JS
+            </div>
+            <!-- <div class="fixed"></div> -->
+            <nav id="nav">
+                <ul id="menu">
+                    <li class="linked"><a href="index.html">Inicio</a></li>
+                    <li class="linked"><a href="about.html">Sobre mí</a></li>
+                    <li class="linked"><a href="watch.html">Reloj</a></li>
+                    <li class="linked"><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main" class="wrap">
+            <section id="box-watch">
+                <!-- Aquí se carga el reloj -->
+                <h2>Reloj</h2>
+                <div id="watch">
+
+                </div>
+            </section>
+
+            <aside id="aside">
+                <h3><span>¿Quién soy?</span></h3>
+                <img src="img/caracol.jpg" />
+                <p id="user" class="letra-post">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type
+                    and scrambled it to make a type specimen book.
+                </p>
+
+                <!-- Formulario para la sesión con datos guardados en localStorage -->
+                <div id="login">
+                    <h3><span>Iniciar Sesión</span></h3>
+                    
+                    <form id="form">
+                        <label for="name">Nombre:</label>
+                        <input name="name" id="name" type="text">
+                        <label for="email">e-mail:</label>
+                        <input name="email" id="email" type="email">
+                        <label for="password">Contraseña:</label>
+                        <input name="password" id="password" type="password">
+
+                        <input id="send" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </aside>
+        </main>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <footer id="footer" class="wrap">
+        <span>Derechos de copyright &copy;</span>
+        <a href="#" id="up">Subir al principio</a>
+    </footer>
+</body>
+
+</html>

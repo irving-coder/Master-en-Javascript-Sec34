@@ -1,0 +1,4 @@
+@use 'styles' with (
+    $tema-principal: #1f87c4,
+    $bg-image: url('../img/cielo.jpg')
+);
